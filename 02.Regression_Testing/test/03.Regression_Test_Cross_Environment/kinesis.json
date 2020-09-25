@@ -1,0 +1,42 @@
+{
+    "description": "Sample Regression Testing - Cross Environment",
+    "name": "03.Regression_Test_Cross_Environment",
+    "tasks": [
+        {
+            "check-columns-summary": true,
+            "check-columns-underlying": true,
+            "check-data-summary": true,
+            "check-filter-types": true,
+            "check-filter-values": true,
+            "check-filters-exist": true,
+            "check-image": true,
+            "check-parameter-types": true,
+            "check-parameter-values": true,
+            "check-parameters-exist": true,
+            "check-worksheets-exist": true,
+            "disabled": false,
+            "image": {
+                "sampling-size": 50,
+                "threshold-percentage": 10
+            },
+            "name": "Cross Environment Testing",
+            "refresh-data": false,
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-env": {
+                "target-site-id": "Presales",
+                "target-tableau-server-password": "3QVPAqgaQn6t;encrypted",
+                "target-tableau-server-url": "htto://tableau-demo.360suite.io:9123",
+                "target-tableau-server-user": "ycouty",
+                "target-tableau-server-version": "2020.3",
+                "target-url": "http://tableau-demo.360suite.io:9123/t/Presales/views/Superstore-UAT/SuperstoreMarket"
+            },
+            "type": "crossenv_test",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore-Dev/SuperstoreMarket",
+            "use-formatted-values": true
+        }
+    ],
+    "type": "crossenv"
+}

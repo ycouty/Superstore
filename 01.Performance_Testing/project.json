@@ -1,0 +1,8 @@
+{
+    "kinesisVersion": "1.8.9",
+    "name": "01.Performance_Testing",
+    "description": "Sample Kinesis CI Project for Performance Testing",
+    "srcDir": "src",
+    "jobDir": "test",
+    "contextDir": "context"
+}
