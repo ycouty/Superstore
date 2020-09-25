@@ -34,7 +34,7 @@ Testing the performance of your Tableau Server by driving load against it
 This example goes hand in hand with the documentation of Kinesis CI, which you can find under https://kinesis-ci.com/documents
 
 # How to use the demo projects
-1. Clone the repository of your choice in Kinesis Designer (File -> Clone Git Repository and enter https://github.com/Superstore and open project.json. This project.json file contains key information to identify the individual test projects within this directory. Alternatively, you can use the Kinesis Command Line Interface and open the files in a text editor.
+1. Clone the repository of your choice in Kinesis Designer (File -> Clone Git Repository and enter https://github.com/ycouty/Superstore.git and open project.json. This project.json file contains key information to identify the individual test projects within this directory. Alternatively, you can use the Kinesis Command Line Interface and open the files in a text editor.
 
 2. Edit the Context Variables in order to fit your environment, i.e. to reference the Tableau Server(s) you are using within your organisation. 
 For more information on context variables, visit https://kinesis-ci.com/documents/#/context-variables
