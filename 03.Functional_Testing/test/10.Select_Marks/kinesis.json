@@ -1,0 +1,37 @@
+{
+    "description": "Select Marks to simulate clicks and user interactions",
+    "name": "10.Select_Marks",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open viz - Superstore Analysis",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis"
+        },
+        {
+            "dimension-values": [
+                "Accessories",
+                "Chairs",
+                "Labels",
+                "Phones"
+            ],
+            "disabled": false,
+            "field": "Sub-Category",
+            "field-type": "DIMENSION",
+            "name": "Selet Marks",
+            "target": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SalesintheSouth",
+            "type": "select_marks",
+            "update-type": "ADD"
+        }
+    ],
+    "type": "functional"
+}

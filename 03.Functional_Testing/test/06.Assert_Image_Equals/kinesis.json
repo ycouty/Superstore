@@ -1,0 +1,30 @@
+{
+    "description": "Sample test to compare the layout of a viz in png to an expected result",
+    "name": "06.Assert_Image_Equals",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Superstore Market Dashboard",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreMarket"
+        },
+        {
+            "disabled": false,
+            "expected-image-path": "resources/Superstore Market.png",
+            "name": "Assert Image Equals",
+            "sampling-size": 50,
+            "threshold-percentage": 10,
+            "type": "assert_image_equals"
+        }
+    ],
+    "type": "functional"
+}

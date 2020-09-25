@@ -1,0 +1,28 @@
+{
+    "description": "Login to Tableau and Open Viz",
+    "name": "02.Login_and_Open_Viz",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Superstore Analysis Dashboard",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis"
+        },
+        {
+            "disabled": false,
+            "name": "Switch Worksheet",
+            "type": "switch_view",
+            "view-name": "Customer Segment"
+        }
+    ],
+    "type": "functional"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "Refrehs Data Extract - data source",
+    "name": "11.Refresh_Data_Extracts_-_data_source",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Refresh Data Extract - Customers",
+            "project": "{{TABLEAU_PROJECT}}",
+            "refresh-extracts-type": "datasource",
+            "site-id": "{{TABLEAU_SITE}}",
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-doc-name": "Customers (Northwind)",
+            "type": "refreshextracts_tableau"
+        }
+    ],
+    "type": "functional"
+}

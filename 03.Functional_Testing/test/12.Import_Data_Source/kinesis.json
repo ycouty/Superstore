@@ -1,0 +1,33 @@
+{
+    "description": "Import Data Source into Tableau",
+    "name": "12.Import_Data_Source",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Import Sales Commisions data source (tdsx) to Tableau",
+            "overwrite": true,
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-location": "kinesis-project",
+            "source-doc-path": "../../src/Sales Commission.tdsx",
+            "source-doc-type": "workbook",
+            "tabbed": false,
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-context": "-- Active Context --",
+            "target-doc-name": "Sales Commission",
+            "type": "publish_tableau"
+        }
+    ],
+    "type": "functional"
+}

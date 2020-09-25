@@ -1,0 +1,66 @@
+{
+    "description": "Sample Test for Assert Data Rules",
+    "name": "08.Assert_Data_Rules",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Viz - Sales in the South",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SalesintheSouth"
+        },
+        {
+            "disabled": false,
+            "name": "Set Filter: Sub-Category",
+            "select-all": false,
+            "target": "Sub-Category",
+            "type": "set_filter_list",
+            "values": [
+                "Bookcases",
+                "Tables",
+                "Machines"
+            ]
+        },
+        {
+            "data-type": "SUMMARY",
+            "disabled": false,
+            "exclude-nulls": false,
+            "formatted-values": false,
+            "name": "Assert Data Rules",
+            "rules": [
+                {
+                    "column": "Sub-Category",
+                    "expression-value": "Supplies",
+                    "operator": "not-equals"
+                },
+                {
+                    "column": "Region",
+                    "expression-value": "Central|East|West",
+                    "operator": "regex"
+                },
+                {
+                    "column": "Year",
+                    "expression-value": "2018",
+                    "operator": "not-equals"
+                }
+            ],
+            "scope": "every-row",
+            "tableau-export-csv": {
+                "delimiter": ",",
+                "encoding": "utf8",
+                "newline-char": "\n"
+            },
+            "target": "Sales in the South",
+            "type": "assert_data_rule_meets"
+        }
+    ],
+    "type": "functional"
+}

@@ -1,0 +1,1410 @@
+{
+    "description": "Set Parameter for Chart Type",
+    "name": "04.Set_Parameters",
+    "tableau-snapshot": {
+        "content": {
+            "filters": true,
+            "fullColumns": true,
+            "image": true,
+            "parameters": true,
+            "summaryColumns": true,
+            "summaryData": true,
+            "worksheets": true
+        },
+        "image": "resources/snapshot-Superstore-CustomerbyState.png",
+        "name": "CustomerbyState",
+        "parameters": [
+            {
+                "name": "Profit Bin Size",
+                "type": "integer",
+                "value": {
+                    "formattedValue": "200",
+                    "value": 200
+                }
+            },
+            {
+                "name": "Top Customers",
+                "type": "integer",
+                "value": {
+                    "formattedValue": "5",
+                    "value": 5
+                }
+            }
+        ],
+        "timestamp": 1598295208689,
+        "uniqueName": "Superstore-CustomerbyState",
+        "url": "http://ec2amaz-2jhlrc5:9123/t/Pre-Sales/views/Superstore/CustomerbyState",
+        "urlWithSelmerTokens": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/CustomerbyState",
+        "worksheets": [
+            {
+                "columns": {
+                    "summary": [
+                        {
+                            "dataType": "string",
+                            "index": 0,
+                            "name": "Country"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 1,
+                            "name": "State"
+                        },
+                        {
+                            "dataType": "integer",
+                            "index": 2,
+                            "name": "AGG(Customer Number)"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 3,
+                            "name": "Latitude (generated)"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 4,
+                            "name": "Longitude (generated)"
+                        }
+                    ],
+                    "underlying": [
+                        {
+                            "dataType": "string",
+                            "index": 0,
+                            "name": "Country"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 1,
+                            "name": "State"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 2,
+                            "name": "Customer Name"
+                        },
+                        {
+                            "dataType": "integer",
+                            "index": 3,
+                            "name": "Customer Number"
+                        }
+                    ]
+                },
+                "data": {
+                    "summary": [
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "1",
+                                "value": "1"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "43.0000",
+                                "value": "43"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-107.5000",
+                                "value": "-107.5"
+                            },
+                            "State": {
+                                "formattedValue": "Wyoming",
+                                "value": "Wyoming"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "52",
+                                "value": "52"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "44.5000",
+                                "value": "44.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-90.0000",
+                                "value": "-90"
+                            },
+                            "State": {
+                                "formattedValue": "Wisconsin",
+                                "value": "Wisconsin"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "2",
+                                "value": "2"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "38.6300",
+                                "value": "38.63"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-80.7300",
+                                "value": "-80.73"
+                            },
+                            "State": {
+                                "formattedValue": "West Virginia",
+                                "value": "West Virginia"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "224",
+                                "value": "224"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "47.5000",
+                                "value": "47.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-120.5000",
+                                "value": "-120.5"
+                            },
+                            "State": {
+                                "formattedValue": "Washington",
+                                "value": "Washington"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "107",
+                                "value": "107"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "37.7700",
+                                "value": "37.77"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-78.2400",
+                                "value": "-78.24"
+                            },
+                            "State": {
+                                "formattedValue": "Virginia",
+                                "value": "Virginia"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "5",
+                                "value": "5"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "44.1584",
+                                "value": "44.1584"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-72.7678",
+                                "value": "-72.7678"
+                            },
+                            "State": {
+                                "formattedValue": "Vermont",
+                                "value": "Vermont"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "26",
+                                "value": "26"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "39.2500",
+                                "value": "39.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-111.7500",
+                                "value": "-111.75"
+                            },
+                            "State": {
+                                "formattedValue": "Utah",
+                                "value": "Utah"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "370",
+                                "value": "370"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "31.2500",
+                                "value": "31.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-99.2500",
+                                "value": "-99.25"
+                            },
+                            "State": {
+                                "formattedValue": "Texas",
+                                "value": "Texas"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "84",
+                                "value": "84"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "35.7500",
+                                "value": "35.75"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-86.2500",
+                                "value": "-86.25"
+                            },
+                            "State": {
+                                "formattedValue": "Tennessee",
+                                "value": "Tennessee"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "5",
+                                "value": "5"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "44.5000",
+                                "value": "44.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-100.2500",
+                                "value": "-100.25"
+                            },
+                            "State": {
+                                "formattedValue": "South Dakota",
+                                "value": "South Dakota"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "19",
+                                "value": "19"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "34.0000",
+                                "value": "34"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-81.0000",
+                                "value": "-81"
+                            },
+                            "State": {
+                                "formattedValue": "South Carolina",
+                                "value": "South Carolina"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "25",
+                                "value": "25"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "41.4966",
+                                "value": "41.4966"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-71.4757",
+                                "value": "-71.4757"
+                            },
+                            "State": {
+                                "formattedValue": "Rhode Island",
+                                "value": "Rhode Island"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "257",
+                                "value": "257"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "40.8600",
+                                "value": "40.86"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-77.9000",
+                                "value": "-77.9"
+                            },
+                            "State": {
+                                "formattedValue": "Pennsylvania",
+                                "value": "Pennsylvania"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "51",
+                                "value": "51"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "44.0000",
+                                "value": "44"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-120.5000",
+                                "value": "-120.5"
+                            },
+                            "State": {
+                                "formattedValue": "Oregon",
+                                "value": "Oregon"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "34",
+                                "value": "34"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "35.5000",
+                                "value": "35.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-97.5000",
+                                "value": "-97.5"
+                            },
+                            "State": {
+                                "formattedValue": "Oklahoma",
+                                "value": "Oklahoma"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "202",
+                                "value": "202"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "40.2500",
+                                "value": "40.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-83.0000",
+                                "value": "-83"
+                            },
+                            "State": {
+                                "formattedValue": "Ohio",
+                                "value": "Ohio"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "2",
+                                "value": "2"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "47.5000",
+                                "value": "47.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-100.0000",
+                                "value": "-100"
+                            },
+                            "State": {
+                                "formattedValue": "North Dakota",
+                                "value": "North Dakota"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "122",
+                                "value": "122"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "35.5000",
+                                "value": "35.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-80.0000",
+                                "value": "-80"
+                            },
+                            "State": {
+                                "formattedValue": "North Carolina",
+                                "value": "North Carolina"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "415",
+                                "value": "415"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "43.0000",
+                                "value": "43"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-75.4900",
+                                "value": "-75.49"
+                            },
+                            "State": {
+                                "formattedValue": "New York",
+                                "value": "New York"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "22",
+                                "value": "22"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "34.5000",
+                                "value": "34.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-106.0000",
+                                "value": "-106"
+                            },
+                            "State": {
+                                "formattedValue": "New Mexico",
+                                "value": "New Mexico"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "61",
+                                "value": "61"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "40.1600",
+                                "value": "40.16"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-74.4900",
+                                "value": "-74.49"
+                            },
+                            "State": {
+                                "formattedValue": "New Jersey",
+                                "value": "New Jersey"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "17",
+                                "value": "17"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "43.6600",
+                                "value": "43.66"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-71.4900",
+                                "value": "-71.49"
+                            },
+                            "State": {
+                                "formattedValue": "New Hampshire",
+                                "value": "New Hampshire"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "23",
+                                "value": "23"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "39.2500",
+                                "value": "39.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-116.7500",
+                                "value": "-116.75"
+                            },
+                            "State": {
+                                "formattedValue": "Nevada",
+                                "value": "Nevada"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "23",
+                                "value": "23"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "41.5000",
+                                "value": "41.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-99.7500",
+                                "value": "-99.75"
+                            },
+                            "State": {
+                                "formattedValue": "Nebraska",
+                                "value": "Nebraska"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "8",
+                                "value": "8"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "47.0000",
+                                "value": "47"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-109.7500",
+                                "value": "-109.75"
+                            },
+                            "State": {
+                                "formattedValue": "Montana",
+                                "value": "Montana"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "28",
+                                "value": "28"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "38.2500",
+                                "value": "38.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-92.5000",
+                                "value": "-92.5"
+                            },
+                            "State": {
+                                "formattedValue": "Missouri",
+                                "value": "Missouri"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "25",
+                                "value": "25"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "33.5030",
+                                "value": "33.503"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-89.8071",
+                                "value": "-89.8071"
+                            },
+                            "State": {
+                                "formattedValue": "Mississippi",
+                                "value": "Mississippi"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "42",
+                                "value": "42"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "46.2500",
+                                "value": "46.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-94.2500",
+                                "value": "-94.25"
+                            },
+                            "State": {
+                                "formattedValue": "Minnesota",
+                                "value": "Minnesota"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "106",
+                                "value": "106"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "43.1045",
+                                "value": "43.1045"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-84.6165",
+                                "value": "-84.6165"
+                            },
+                            "State": {
+                                "formattedValue": "Michigan",
+                                "value": "Michigan"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "62",
+                                "value": "62"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "42.3616",
+                                "value": "42.3616"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-72.1839",
+                                "value": "-72.1839"
+                            },
+                            "State": {
+                                "formattedValue": "Massachusetts",
+                                "value": "Massachusetts"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "45",
+                                "value": "45"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "39.4444",
+                                "value": "39.4444"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-77.0834",
+                                "value": "-77.0834"
+                            },
+                            "State": {
+                                "formattedValue": "Maryland",
+                                "value": "Maryland"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "3",
+                                "value": "3"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "45.5000",
+                                "value": "45.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-69.2400",
+                                "value": "-69.24"
+                            },
+                            "State": {
+                                "formattedValue": "Maine",
+                                "value": "Maine"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "21",
+                                "value": "21"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "30.6935",
+                                "value": "30.6935"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-92.2410",
+                                "value": "-92.241"
+                            },
+                            "State": {
+                                "formattedValue": "Louisiana",
+                                "value": "Louisiana"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "58",
+                                "value": "58"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "37.7900",
+                                "value": "37.79"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-84.8700",
+                                "value": "-84.87"
+                            },
+                            "State": {
+                                "formattedValue": "Kentucky",
+                                "value": "Kentucky"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "14",
+                                "value": "14"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "38.5000",
+                                "value": "38.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-98.5000",
+                                "value": "-98.5"
+                            },
+                            "State": {
+                                "formattedValue": "Kansas",
+                                "value": "Kansas"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "17",
+                                "value": "17"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "42.0000",
+                                "value": "42"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-93.5000",
+                                "value": "-93.5"
+                            },
+                            "State": {
+                                "formattedValue": "Iowa",
+                                "value": "Iowa"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "70",
+                                "value": "70"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "40.0000",
+                                "value": "40"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-86.2500",
+                                "value": "-86.25"
+                            },
+                            "State": {
+                                "formattedValue": "Indiana",
+                                "value": "Indiana"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "237",
+                                "value": "237"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "40.0000",
+                                "value": "40"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-89.2500",
+                                "value": "-89.25"
+                            },
+                            "State": {
+                                "formattedValue": "Illinois",
+                                "value": "Illinois"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "11",
+                                "value": "11"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "44.0739",
+                                "value": "44.0739"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-114.5420",
+                                "value": "-114.542"
+                            },
+                            "State": {
+                                "formattedValue": "Idaho",
+                                "value": "Idaho"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "83",
+                                "value": "83"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "32.1598",
+                                "value": "32.1598"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-83.4715",
+                                "value": "-83.4715"
+                            },
+                            "State": {
+                                "formattedValue": "Georgia",
+                                "value": "Georgia"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "181",
+                                "value": "181"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "28.4200",
+                                "value": "28.42"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-81.5500",
+                                "value": "-81.55"
+                            },
+                            "State": {
+                                "formattedValue": "Florida",
+                                "value": "Florida"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "4",
+                                "value": "4"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "38.9100",
+                                "value": "38.91"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-77.0000",
+                                "value": "-77"
+                            },
+                            "State": {
+                                "formattedValue": "District of Columbia",
+                                "value": "District of Columbia"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "43",
+                                "value": "43"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "38.6716",
+                                "value": "38.6716"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-75.4165",
+                                "value": "-75.4165"
+                            },
+                            "State": {
+                                "formattedValue": "Delaware",
+                                "value": "Delaware"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "43",
+                                "value": "43"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "41.6227",
+                                "value": "41.6227"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-72.7028",
+                                "value": "-72.7028"
+                            },
+                            "State": {
+                                "formattedValue": "Connecticut",
+                                "value": "Connecticut"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "75",
+                                "value": "75"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "39.0000",
+                                "value": "39"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-105.5000",
+                                "value": "-105.5"
+                            },
+                            "State": {
+                                "formattedValue": "Colorado",
+                                "value": "Colorado"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "577",
+                                "value": "577"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "37.2500",
+                                "value": "37.25"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-119.7500",
+                                "value": "-119.75"
+                            },
+                            "State": {
+                                "formattedValue": "California",
+                                "value": "California"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "27",
+                                "value": "27"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "34.7500",
+                                "value": "34.75"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-92.5000",
+                                "value": "-92.5"
+                            },
+                            "State": {
+                                "formattedValue": "Arkansas",
+                                "value": "Arkansas"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "100",
+                                "value": "100"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "34.5000",
+                                "value": "34.5"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-111.5000",
+                                "value": "-111.5"
+                            },
+                            "State": {
+                                "formattedValue": "Arizona",
+                                "value": "Arizona"
+                            }
+                        },
+                        {
+                            "AGG(Customer Number)": {
+                                "formattedValue": "34",
+                                "value": "34"
+                            },
+                            "Country": {
+                                "formattedValue": "United States",
+                                "value": "United States"
+                            },
+                            "Latitude (generated)": {
+                                "formattedValue": "32.7500",
+                                "value": "32.75"
+                            },
+                            "Longitude (generated)": {
+                                "formattedValue": "-86.7500",
+                                "value": "-86.75"
+                            },
+                            "State": {
+                                "formattedValue": "Alabama",
+                                "value": "Alabama"
+                            }
+                        }
+                    ]
+                },
+                "filters": [
+                    {
+                        "caption": "State",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "Alabama",
+                                "value": "Alabama"
+                            },
+                            {
+                                "formattedValue": "Arizona",
+                                "value": "Arizona"
+                            },
+                            {
+                                "formattedValue": "Arkansas",
+                                "value": "Arkansas"
+                            },
+                            {
+                                "formattedValue": "California",
+                                "value": "California"
+                            },
+                            {
+                                "formattedValue": "Colorado",
+                                "value": "Colorado"
+                            },
+                            {
+                                "formattedValue": "Connecticut",
+                                "value": "Connecticut"
+                            },
+                            {
+                                "formattedValue": "Delaware",
+                                "value": "Delaware"
+                            },
+                            {
+                                "formattedValue": "District of Columbia",
+                                "value": "District of Columbia"
+                            },
+                            {
+                                "formattedValue": "Florida",
+                                "value": "Florida"
+                            },
+                            {
+                                "formattedValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "formattedValue": "Idaho",
+                                "value": "Idaho"
+                            },
+                            {
+                                "formattedValue": "Illinois",
+                                "value": "Illinois"
+                            },
+                            {
+                                "formattedValue": "Indiana",
+                                "value": "Indiana"
+                            },
+                            {
+                                "formattedValue": "Iowa",
+                                "value": "Iowa"
+                            },
+                            {
+                                "formattedValue": "Kansas",
+                                "value": "Kansas"
+                            },
+                            {
+                                "formattedValue": "Kentucky",
+                                "value": "Kentucky"
+                            },
+                            {
+                                "formattedValue": "Louisiana",
+                                "value": "Louisiana"
+                            },
+                            {
+                                "formattedValue": "Maine",
+                                "value": "Maine"
+                            },
+                            {
+                                "formattedValue": "Maryland",
+                                "value": "Maryland"
+                            },
+                            {
+                                "formattedValue": "Massachusetts",
+                                "value": "Massachusetts"
+                            },
+                            {
+                                "formattedValue": "Michigan",
+                                "value": "Michigan"
+                            },
+                            {
+                                "formattedValue": "Minnesota",
+                                "value": "Minnesota"
+                            },
+                            {
+                                "formattedValue": "Mississippi",
+                                "value": "Mississippi"
+                            },
+                            {
+                                "formattedValue": "Missouri",
+                                "value": "Missouri"
+                            },
+                            {
+                                "formattedValue": "Montana",
+                                "value": "Montana"
+                            },
+                            {
+                                "formattedValue": "Nebraska",
+                                "value": "Nebraska"
+                            },
+                            {
+                                "formattedValue": "Nevada",
+                                "value": "Nevada"
+                            },
+                            {
+                                "formattedValue": "New Hampshire",
+                                "value": "New Hampshire"
+                            },
+                            {
+                                "formattedValue": "New Jersey",
+                                "value": "New Jersey"
+                            },
+                            {
+                                "formattedValue": "New Mexico",
+                                "value": "New Mexico"
+                            },
+                            {
+                                "formattedValue": "New York",
+                                "value": "New York"
+                            },
+                            {
+                                "formattedValue": "North Carolina",
+                                "value": "North Carolina"
+                            },
+                            {
+                                "formattedValue": "North Dakota",
+                                "value": "North Dakota"
+                            },
+                            {
+                                "formattedValue": "Ohio",
+                                "value": "Ohio"
+                            },
+                            {
+                                "formattedValue": "Oklahoma",
+                                "value": "Oklahoma"
+                            },
+                            {
+                                "formattedValue": "Oregon",
+                                "value": "Oregon"
+                            },
+                            {
+                                "formattedValue": "Pennsylvania",
+                                "value": "Pennsylvania"
+                            },
+                            {
+                                "formattedValue": "Rhode Island",
+                                "value": "Rhode Island"
+                            },
+                            {
+                                "formattedValue": "South Carolina",
+                                "value": "South Carolina"
+                            },
+                            {
+                                "formattedValue": "South Dakota",
+                                "value": "South Dakota"
+                            },
+                            {
+                                "formattedValue": "Tennessee",
+                                "value": "Tennessee"
+                            },
+                            {
+                                "formattedValue": "Texas",
+                                "value": "Texas"
+                            },
+                            {
+                                "formattedValue": "Utah",
+                                "value": "Utah"
+                            },
+                            {
+                                "formattedValue": "Vermont",
+                                "value": "Vermont"
+                            },
+                            {
+                                "formattedValue": "Virginia",
+                                "value": "Virginia"
+                            },
+                            {
+                                "formattedValue": "Washington",
+                                "value": "Washington"
+                            },
+                            {
+                                "formattedValue": "West Virginia",
+                                "value": "West Virginia"
+                            },
+                            {
+                                "formattedValue": "Wisconsin",
+                                "value": "Wisconsin"
+                            },
+                            {
+                                "formattedValue": "Wyoming",
+                                "value": "Wyoming"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Customer by State"
+            }
+        ]
+    },
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Oepn Superstore Analysis Dashboard",
+            "refresh-data": true,
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis"
+        },
+        {
+            "disabled": false,
+            "name": "Set Parameter: Chart Type",
+            "parameter-type": "string",
+            "target": "Chart Type",
+            "type": "set_parameter",
+            "value-date-type": "static",
+            "value-datetime-type": "static",
+            "value-string": "Map"
+        }
+    ],
+    "type": "functional"
+}

@@ -1,0 +1,35 @@
+{
+    "description": "Set Filter for Region",
+    "name": "03.Set_Filters",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open Superstore Analysis Dashboard",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis"
+        },
+        {
+            "disabled": false,
+            "name": "Set Filter: Region",
+            "select-all": false,
+            "target": "Region",
+            "target-worksheet": "Sales by Product/Region",
+            "type": "set_filter_list",
+            "values": [
+                "Central",
+                "East",
+                "South"
+            ]
+        }
+    ],
+    "type": "functional"
+}

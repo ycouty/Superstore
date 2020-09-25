@@ -1,0 +1,28 @@
+{
+    "description": "Switch tab",
+    "name": "09.Switch_Tab",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Open viz - Sales in the South",
+            "type": "viz_open",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SalesintheSouth"
+        },
+        {
+            "disabled": false,
+            "name": "Switch Tab",
+            "type": "switch_view",
+            "view-name": "Ship Mode"
+        }
+    ],
+    "type": "functional"
+}

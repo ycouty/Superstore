@@ -1,0 +1,33 @@
+{
+    "description": "Import Sample Workbook into Tableau Server",
+    "name": "01.Import_Sample_Workbook",
+    "tasks": [
+        {
+            "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
+            "name": "Import Sample Workbook into Tableau Server",
+            "overwrite": true,
+            "project": "{{TABLEAU_PROJECT}}",
+            "site-id": "{{TABLEAU_SITE}}",
+            "source-doc-location": "kinesis-project",
+            "source-doc-path": "../../src/Superstore.twbx",
+            "source-doc-type": "workbook",
+            "tabbed": false,
+            "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "tableau-server-url": "{{TABLEAU_URL}}",
+            "tableau-server-user": "{{TABLEAU_USER}}",
+            "target-context": "-- Active Context --",
+            "target-doc-name": "Superstore",
+            "type": "publish_tableau"
+        }
+    ],
+    "type": "functional"
+}
