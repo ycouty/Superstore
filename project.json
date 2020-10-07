@@ -1,8 +1,0 @@
-{
-    "kinesisVersion": "1.8.9",
-    "name": "03.Functional_Testing",
-    "description": "Sample Kinesis CI Project for Functional Testing",
-    "srcDir": "src",
-    "jobDir": "test",
-    "contextDir": "context"
-}
