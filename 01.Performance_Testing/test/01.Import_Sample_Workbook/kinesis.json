@@ -4,6 +4,15 @@
     "tasks": [
         {
             "disabled": false,
+            "name": "Login to Tableau",
+            "password": "9h9oMJ05dVvJlifzl/v8;encrypted",
+            "site-id": "{{TABLEAU_SITE}}",
+            "type": "login_tableau",
+            "url": "{{TABLEAU_URL}}",
+            "user": "{{TABLEAU_USER}}"
+        },
+        {
+            "disabled": false,
             "name": "Import Sample Workbook into Tableau Server",
             "overwrite": true,
             "project": "{{TABLEAU_PROJECT}}",

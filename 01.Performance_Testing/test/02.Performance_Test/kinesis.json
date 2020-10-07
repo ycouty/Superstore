@@ -1,5 +1,5 @@
 {
-    "description": "Sample for Performance Testing",
+    "description": "Performance Test",
     "name": "02.Performance_Test",
     "tasks": [
         {
@@ -7,30 +7,30 @@
                 "apdex-goal": 0.85,
                 "availability-goal": 99.5,
                 "excluded-samples": {
-                    "bootstrap-request-event": false,
-                    "clear-session-event": false,
-                    "create-session-event": false,
+                    "bootstrap-request-event": true,
+                    "clear-session-event": true,
+                    "create-session-event": true,
                     "get-interactive-components-event": false,
-                    "get-view-event": false,
+                    "get-view-event": true,
                     "interact-randomly-event": false,
-                    "interaction-with-viz-event": false,
-                    "login-event": false,
+                    "interaction-with-viz-event": true,
+                    "login-event": true,
                     "opening-viz-on-server-event": false
                 },
-                "response-time-goal": 3000
+                "response-time-goal": 2000
             },
             "advanced": {
                 "compatibility-mode": false,
                 "force-login": true,
-                "think-time-before-interaction": 0,
-                "think-time-between-test": 0,
+                "think-time-before-interaction": 10,
+                "think-time-between-test": 10,
                 "tolerated-apdex-multiplier": 4
             },
-            "clients": 18,
+            "clients": 100,
             "disabled": false,
             "duration": 300,
             "load-mix": "InteractVizLoadTest",
-            "name": "Performance Test - Tableau Server",
+            "name": "Performance test",
             "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
             "tableau-server-url": "{{TABLEAU_URL}}",
             "tableau-server-user": "{{TABLEAU_USER}}",
@@ -38,13 +38,11 @@
             "user-pool": [
                 {
                     "password": "3QVPAqgaQn6t;encrypted",
-                    "role": "Server Administrator",
                     "username": "ycouty"
                 }
             ],
             "view-pool": [
-                "/site/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis",
-                "/site/{{TABLEAU_SITE}}/views/Superstore/SuperstoreMarket"
+                "/site/{{TABLEAU_SITE}}/views/Superstore-Dev/SuperstoreAnalysis"
             ]
         }
     ],

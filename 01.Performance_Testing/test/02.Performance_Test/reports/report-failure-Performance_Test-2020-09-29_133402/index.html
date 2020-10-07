@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kinesis.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bundle.js" type="text/javascript"></script> <!-- json-formatter-js, distributed as bundle.js on github -->
+    <script src="js/xml2json.min.js" type="text/javascript"></script>
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/Chart.min.js" type="text/javascript"></script>
+    <script src="js/easyzoom.js" type="text/javascript"></script>
+    <!-- Init easyzoom -->
+    <script language="javascript">$(document).ready(function() { $('.easyzoom').easyZoom(); });</script>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title></title>
+</head>
+<body>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <table class="table table-borderless">
+        <tr>
+            <td class="col-md-3 text-center vert-align">
+                
+                    <h4><span class="label label-danger">&#10060; Failed</span></h4>
+                
+            </td>
+            <td class="col-md-6 text-center vert-align">
+                <h3>Performance_Test</h3>
+                <h5>Performance Test</h5>
+                <h5>2020-09-29 13:34:02</h5>
+            </td>
+            <td class="col-md-3 text-center vert-align"><img src="images/kinesis-logo.png"/></td>
+        </tr>
+    </table>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Summary</h3>
+<table class="table table-striped">
+    <!--<caption>Summary</caption>-->
+    <thead>
+    <tr>
+        <!--<td>#</td>-->
+        <td>Task Name</td>
+        <td>Status</td>
+        <td>Time</td>
+    </tr>
+    </thead>
+    <!--For each task...-->
+    <!--Each task should contain an anchor link to the task config later down the page-->
+
+    <tbody>
+    
+    <tr>
+        <td><a href="#link-500619680">Performance test</a></td>
+        <td>&#10060;</td>
+        <td>417.251s</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+            <h3>Task Details</h3>
+    
+   <a name="link-500619680"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name (1/1)</th>
+                <th>Performance test</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-500619680"></td>
+                <script type="text/javascript">
+                    var jsonData = {"tableau-server-user":"ycouty","SLA":{"apdex-goal":0.85,"availability-goal":99.5,"excluded-samples":{"bootstrap-request-event":true,"get-view-event":true,"create-session-event":true,"get-interactive-components-event":false,"clear-session-event":true,"login-event":true,"interaction-with-viz-event":true,"interact-randomly-event":false,"opening-viz-on-server-event":false},"response-time-goal":2000},"view-pool":["\/site\/Presales\/views\/Superstore-Dev\/SuperstoreAnalysis","\/site\/Presales\/views\/Superstore-Dev\/SuperstoreMarket"],"disabled":false,"user-pool":[{"password":"********","username":"ycouty"}],"name":"Performance test","clients":100,"advanced":{"compatibility-mode":false,"force-login":true,"think-time-before-interaction":10,"think-time-between-test":10,"tolerated-apdex-multiplier":4},"type":"performance_test","duration":300,"load-mix":"InteractVizLoadTest","tableau-server-url":"http:\/\/tableau-demo.360suite.io:9123","tableau-server-password":"********"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-500619680");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        <a href="artifacts/kinesis-performance-20200929T133401.934Z.json">kinesis-performance-20200929T133401.934Z.json</a>
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Performance test failed. Availability Goal (Parent Samples): [0.85] Actual: [4.30220365524292] </p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+                <tr>
+    <td colspan="2">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="pill" href="#apdex-tab">APDEX</a></li>
+            <li><a data-toggle="pill" href="#response-times-tab">Response Times</a></li>
+            <li><a data-toggle="pill" href="#failures-tab">Availability</a></li>
+            <li><a data-toggle="pill" href="#samples-log-tab">Samples Log</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="apdex-tab" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h5><strong>APDEX (Application Performance Index)</strong></h5>
+                        <div class="col-xs-8 text-center">
+                            <canvas id="chart-apdex" height="40px"></canvas>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <div id="apdex-summary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h5><strong>APDEX by Labels</strong></h5>
+                        <table id="apdex-labels-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Response Time Goal (ms)</th>
+                                    <th>Tolerable Response Time (ms)</th>
+                                    <th>Apdex</th>
+                                    <th>Apdex Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="response-times-tab" class="tab-pane fade">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h5><strong>Response Times over Time</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-center">
+                            <div id="apdex-frustrateds-summary">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <div id="apdex-tolerateds-summary">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <div id="apdex-satisfieds-summary">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <canvas id="chart-response-times" height="160px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div id="failures-tab" class="tab-pane fade">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h5><strong>Availability</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 text-center">
+                            <div id="availability-parent-summary">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            <div id="availability-child-summary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h5><strong>Parent Sample Errors</strong></h5>
+                        <table id="failures-parent-samples-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Error Message</th>
+                                    <th>Number of Errors</th>
+                                    <th>% in Failures</th>
+                                    <th>% in All Samples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h5><strong>Child Sample Errors</strong></h5>
+                        <table id="failures-child-samples-table" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Error Message</th>
+                                    <th>Number of Errors</th>
+                                    <th>% in Failures</th>
+                                    <th>% in All Samples</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="samples-log-tab" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <table id="samples-log-table" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Label</th>
+                                    <th>Response Time (ms)</th>
+                                    <th>Response Message</th>
+                                    <th>Success</th>
+                                    <th>Response Time Zone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<script>
+    const availabilityGoal = "99.5";
+    const responseTimeGoal = "2000";
+    const toleratedApdexMultiplier = "4";
+    const tolerableResponseTime = responseTimeGoal * toleratedApdexMultiplier;
+
+    function apdexScoreToRating(apdexScore) {
+        let rating = { ratingName: 'Unknown', ragClass: '', backgroundColor: 'rgba(119, 119, 119, 1)', borderColor: 'rgba(119, 119, 119, 0.5)' };
+        if (apdexScore >= 0.94) {
+            rating = { ratingName: 'Excellent', ragClass: 'success', backgroundColor: 'rgba( 26, 150,  65, 1)', borderColor: 'rgba( 26, 150,  65, 0.5)' }
+        } else if (apdexScore >= 0.85) {
+            rating = { ratingName: 'Good', ragClass: 'success', backgroundColor: 'rgba(166, 217, 106, 1)', borderColor: 'rgba(166, 217, 106, 0.5)' }
+        } else if (apdexScore >= 0.70) {
+            rating = { ratingName: 'Fair', ragClass: 'warning', backgroundColor: 'rgba(255, 255, 191, 1)', borderColor: 'rgba(255, 255, 191, 0.5)' }
+        } else if (apdexScore >= 0.50) {
+            rating = { ratingName: 'Poor', ragClass: 'danger', backgroundColor: 'rgba(253, 174,  97, 1)', borderColor: 'rgba(253, 174,  97, 0.5)' }
+        } else {
+            rating = { ratingName: 'Unacceptable', ragClass: 'danger', backgroundColor: 'rgba(215,  25,  28, 1)', borderColor: 'rgba(215,  25,  28, 0.5)' }
+        }
+
+        return rating;
+    }
+
+    function renderApdexChart(ctxApdex, samplesSummary, title) {
+        const apdexScore = samplesSummary['apdex-score'];
+        const apdexRating = apdexScoreToRating(apdexScore);
+
+        new Chart(ctxApdex,
+            {
+                type: 'horizontalBar',
+                data: {
+                    labels: [''],
+                    datasets: [{
+                        label: 'Overall APDEX',
+                        borderWidth: 1,
+                        data: [apdexScore],
+                        backgroundColor: apdexRating.backgroundColor,
+                        borderColor: apdexRating.borderColor,
+                    }],
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: title,
+                    },
+                    elements: {
+                        rectangle: {
+                            borderWidth: 2,
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            ticks: {
+                                suggestedMin: 0,
+                                suggestedMax: 1,
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: false,
+                    }
+                }
+            });
+    }
+
+    function renderApdexSummary(apdexSummary, samplesSummary) {
+        const apdexScore = samplesSummary['apdex-score'];
+        const apdexRating = apdexScoreToRating(apdexScore);
+
+        $(apdexSummary)
+            .append(`<div><h5><strong>Overall Score</strong></h5><h2><strong>${apdexScore.toFixed(2)}</strong></h2></div>`)
+            .append(`<div class="text-${apdexRating.ragClass}"><h2><strong>${apdexRating.ratingName}</strong></h2></div>`)
+    }
+
+    function renderApdexLabelsTable(apdexTableLabels, labels) {
+        // Foreach every sample group
+        for ( var key in labels ) {
+            if (!labels.hasOwnProperty(key)) continue;
+            const apdexScore = labels[key]['label-summary']['apdex-score']
+            const apdexRating = apdexScoreToRating(apdexScore);
+            $(apdexTableLabels).find('tbody')
+                .append(`<tr class="${apdexRating.ragClass}"><td><strong>${key}</strong></td><td>${responseTimeGoal}</td><td>${tolerableResponseTime}</td><td><strong>${apdexScore.toFixed(2)}</strong></td><td><strong>${apdexRating.ratingName}</strong></tr>`);
+        }
+    }
+
+    function renderResponseTimeZoneSummary(apdexSummary, samplesSummary, title) {
+        let nrSamples = 0;
+        let ragClass = '';
+        if (title === "Frustrating") {
+            nrSamples = samplesSummary.frustrateds;
+            ragClass = 'danger';
+        } else if (title === "Tolerating") {
+            nrSamples = samplesSummary.tolerateds;
+            ragClass = 'warning';
+        } else if (title === "Satisfying") {
+            nrSamples =samplesSummary.satisfieds;
+            ragClass = 'success';
+        }
+        const ratio = samplesSummary.total === 0 ? 0 : (nrSamples / samplesSummary.total) * 100;
+
+        $(apdexSummary)
+            .append(`<div>`)
+            .append(`<h5 class="text-${ragClass}"><strong>${title}</strong></h5>`)
+            .append(`<h2><strong>${nrSamples}</strong> (${ratio.toFixed(2)}%)</h2>`)
+            .append(`</div>`);
+    }
+
+    function renderResponseTimesChart(ctxResponseTimes, responseTimes, title) {
+        const palette = [
+            { backgroundColor: 'rgba(166, 206, 227, 0.5)', borderColor: 'rgba(166, 206, 227, 1)' },
+            { backgroundColor: 'rgba( 31, 120, 180, 0.5)', borderColor: 'rgba( 31, 120, 180, 1)' },
+            { backgroundColor: 'rgba(178, 223, 138, 0.5)', borderColor: 'rgba(178, 223, 138, 1)' },
+            { backgroundColor: 'rgba( 51, 160,  44, 0.5)', borderColor: 'rgba( 51, 160,  44, 1)' },
+            { backgroundColor: 'rgba(251, 154, 153, 0.5)', borderColor: 'rgba(251, 154, 153, 1)' },
+            { backgroundColor: 'rgba(253, 191, 111, 0.5)', borderColor: 'rgba(253, 191, 111, 1)' },
+            { backgroundColor: 'rgba(255, 127,   0, 0.5)', borderColor: 'rgba(255, 127,   0, 1)' },
+            { backgroundColor: 'rgba(202, 178, 214, 0.5)', borderColor: 'rgba(202, 178, 214, 1)' },
+        ];
+        let rtDatasets = [];
+        let paletteIndex = 0;
+        let minTimestamp = 0;
+        let maxTimestamp = 0;
+
+        // First add style for target and tolerable response times.
+        // Values will be populated later
+        rtDatasets.push({
+            label: 'Response Time Goal (ms)',
+            data: [],
+            backgroundColor: 'rgba(255, 195,   0, 0)',
+            borderColor: 'rgba(255, 195,   0, 1)',
+            borderDash: [15, 5],
+            borderWidth: 4,
+            pointRadius: 0,
+            showLine: true,
+        }, {
+            label: 'Tolerable Response Time (ms)',
+            data: [],
+            backgroundColor: 'rgba(227,  26,  28, 0)',
+            borderColor: 'rgba(227,  26,  28, 1)',
+            borderDash: [15, 5],
+            borderWidth: 4,
+            pointRadius: 0,
+            showLine: true,
+        });
+        
+        // Foreach every sample group and draw lines
+        for ( var key in responseTimes ) {
+            if (!responseTimes.hasOwnProperty(key)) continue;
+            let rtDataset = {
+                label: key,
+                data: [],
+                backgroundColor: palette.length > paletteIndex ? palette[paletteIndex].backgroundColor : undefined,
+                borderColor: palette.length > paletteIndex ? palette[paletteIndex].borderColor : undefined,
+                showLine: false,
+            }
+            paletteIndex++;
+
+            responseTimes[key].samples.forEach(function(rt) {
+                rtDataset.data.push({ x: Number(rt.timestamp), y: Number(rt['response-time']) });
+                if (minTimestamp === 0) { minTimestamp = Number(rt.timestamp); }
+                if (minTimestamp > Number(rt.timestamp)) { minTimestamp = Number(rt.timestamp); }
+                if (maxTimestamp < Number(rt.timestamp)) { maxTimestamp = Number(rt.timestamp); }
+            });
+
+            rtDatasets.push(rtDataset);
+        }
+
+        // Add target response time as a horizontal line
+        rtDatasets[0].data = [
+            { x: minTimestamp, y: responseTimeGoal },
+            { x: maxTimestamp, y: responseTimeGoal },
+        ];
+
+        // Add tolerable response time as a horizontal line
+        rtDatasets[1].data = [
+            { x: minTimestamp, y: tolerableResponseTime },
+            { x: maxTimestamp, y: tolerableResponseTime },
+        ];
+
+        new Chart(ctxResponseTimes,
+            {
+                type: 'line',
+                data: {
+                    datasets: rtDatasets
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: title,
+                    },
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Timestamp'
+                            }
+                        }],
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Response Time [ms]'
+                            }
+                        }]
+                    }
+                }
+            });
+    }
+
+    function renderAvailabilitySummary(availabilitySummary, summary, title) {
+        let ragClass = '';
+        if (summary.availability >= availabilityGoal) {
+            ragClass = "text-success";
+        } else {
+            ragClass = "text-danger";
+        }
+
+        $(availabilitySummary)
+            .append(`<div>`)
+            .append(`<h5><strong>${title}</strong></h5>`)
+            .append(`<h2 class="${ragClass}"><strong>${summary.availability.toFixed(2)}%</strong></h2>`)
+            .append(`</div>`);
+    }
+
+    function renderFailuresTable(failuresTable, samples) {
+        const failures = samples.failures;
+
+        // Foreach every failure group
+        for ( var key in failures ) {
+            if (!failures.hasOwnProperty(key)) continue;
+            const totalFailures = failures[key]['response-message-summary']['total'];
+            const percInFailures = (totalFailures / samples.summary.failures) * 100;
+            const percInAllSamples = (totalFailures / samples.summary.total) * 100;
+            
+            $(failuresTable).find('tbody')
+                 .append(`<tr><td><strong>${key}</strong></td><td>${totalFailures}</td><td>${percInFailures.toFixed(2)}%</td><td>${percInAllSamples.toFixed(2)}%</td></tr>`);
+        }
+    }
+
+    function renderSamplesLogTable(samplesLogTable, labels) {
+        // Foreach every sample group
+        for ( var key in labels ) {
+            if (!labels.hasOwnProperty(key)) continue;
+
+            labels[key].samples.forEach(sample => {
+                let responseTimeZone;
+                if (sample['satisfied?']) {
+                    responseTimeZone = 'Satisfying';
+                    responseTimeClass = '';
+                } else if (sample['tolerated?']) {
+                    responseTimeZone = 'Tolerating';
+                    responseTimeClass = 'warning';
+                } else if (sample['frustrated?']) {
+                    responseTimeZone = 'Frustrating';
+                    responseTimeClass = 'danger';
+                } else {
+                    responseTimeZone = 'Unknown';
+                    responseTimeClass = 'danger';
+                }
+
+                $(samplesLogTable).find('tbody')
+                    .append(`<tr class="${responseTimeClass}"><td><strong>${key}</strong></td><td>${sample['response-time']}</td><td>${sample['response-message']}</td><td>${sample['success?'] ? '&#9989;' : '&#10060;'}</td><td><strong>${responseTimeZone}</strong></td></tr>`);
+            });
+        }
+    }
+
+    $.ajax({
+        type: "get",
+        url: "artifacts/kinesis-performance-20200929T133401.934Z.json",
+        dataType: "json",
+        success: function(jsonData) {
+            // Apdex tab
+            const ctxApdex = document.getElementById("chart-apdex");
+            renderApdexChart(ctxApdex, jsonData['child-samples']['summary'], "Overall Score");
+            renderApdexSummary("#apdex-summary", jsonData['child-samples']['summary']);
+            renderApdexLabelsTable("#apdex-labels-table", jsonData['child-samples']['labels']);
+
+            // Response Times tab
+            const ctxResponseTimes = document.getElementById("chart-response-times");
+            renderResponseTimeZoneSummary("#apdex-frustrateds-summary", jsonData['child-samples']['summary'], "Frustrating");
+            renderResponseTimeZoneSummary("#apdex-tolerateds-summary", jsonData['child-samples']['summary'], "Tolerating");
+            renderResponseTimeZoneSummary("#apdex-satisfieds-summary", jsonData['child-samples']['summary'], "Satisfying");
+            renderResponseTimesChart(ctxResponseTimes, jsonData['child-samples']['labels'], "");
+
+            // Availability tab
+            renderAvailabilitySummary("#availability-parent-summary", jsonData['parent-samples'].summary, "Parent Samples Availability");
+            renderAvailabilitySummary("#availability-child-summary", jsonData['child-samples'].summary, "Child Samples Availability");
+            renderFailuresTable("#failures-parent-samples-table", jsonData['parent-samples']);
+            renderFailuresTable("#failures-child-samples-table", jsonData['child-samples']);
+
+            // Samples Log tab
+            renderSamplesLogTable("#samples-log-table", jsonData['child-samples']['labels']);
+        },
+        error: function(xhr, status) {
+            console.log("failed to load results");
+        }
+    });
+
+</script>
+
+            
+        </tbody>
+    </table>
+    
+
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>
