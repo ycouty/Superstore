@@ -4,7 +4,6 @@
     "tasks": [
         {
             "check-columns-summary": true,
-            "check-columns-underlying": true,
             "check-data-summary": true,
             "check-filter-types": true,
             "check-filter-values": true,
@@ -19,7 +18,7 @@
                 "sampling-size": 50,
                 "threshold-percentage": 10
             },
-            "name": "Cross Environment Testing",
+            "name": "Cross Environment Regression testing",
             "refresh-data": false,
             "site-id": "{{TABLEAU_SITE}}",
             "tableau-server-password": "9h9oMJ05dVvJlifzl/v8;encrypted",
@@ -28,13 +27,13 @@
             "target-env": {
                 "target-site-id": "Presales",
                 "target-tableau-server-password": "3QVPAqgaQn6t;encrypted",
-                "target-tableau-server-url": "htto://tableau-demo.360suite.io:9123",
+                "target-tableau-server-url": "http://tableau-demo.360suite.io:9123",
                 "target-tableau-server-user": "ycouty",
                 "target-tableau-server-version": "2020.3",
-                "target-url": "http://tableau-demo.360suite.io:9123/t/Presales/views/Superstore-UAT/SuperstoreMarket"
+                "target-url": "http://tableau-demo.360suite.io:9123/t/Presales/views/Superstore_16019319141090/SuperstoreAnalysis"
             },
             "type": "crossenv_test",
-            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore-Dev/SuperstoreMarket",
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis",
             "use-formatted-values": true
         }
     ],

@@ -1,0 +1,28 @@
+{
+    "integrations": [
+        {
+            "enabled": false,
+            "from": "no-reply@360suite.io",
+            "onFailure": {
+                "enabled": true,
+                "message": "<h2>TEST FAILED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Message:</strong> *|OUTPUT_MESSAGE|*<br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "onStart": {
+                "enabled": true,
+                "message": "<h2>TEST STARTED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br />"
+            },
+            "onSuccess": {
+                "enabled": true,
+                "message": "<h2>TEST PASSED</h2>\n<hr>\n\n<strong>Test Path:</strong> *|TEST_PATH|*<br />\n<strong>Running on Host:</strong> *|HOSTNAME|* (*|IP|*)<br /><br />\n<strong>Tested Vizzes:</strong><br />\n*|TESTED_VIZZES|*<br />\n<strong>HTML Report Paths:</strong><br />\n*|REPORT_PATHS|*"
+            },
+            "password": "zydqBawMSS3SmjDoksvrzxmPiIzQ96fPYcpWuXCJQ654X3tstC3weSN1ruA=;encrypted",
+            "secure": true,
+            "smtpHost": "email-smtp.eu-central-1.amazonaws.com",
+            "smtpPort": 465,
+            "to": "yasmina.couty@360suite.io",
+            "type": "email",
+            "useAuth": true,
+            "user": "AKIAXCGACTGGGMGJLJUB"
+        }
+    ]
+}
