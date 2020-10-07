@@ -16,12 +16,6 @@
             "name": "Open Superstore Analysis Dashboard",
             "type": "viz_open",
             "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SuperstoreAnalysis"
-        },
-        {
-            "disabled": false,
-            "name": "Switch Worksheet",
-            "type": "switch_view",
-            "view-name": "Customer Segment"
         }
     ],
     "type": "functional"

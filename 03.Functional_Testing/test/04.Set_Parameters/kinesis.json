@@ -11,8 +11,8 @@
             "summaryData": true,
             "worksheets": true
         },
-        "image": "resources/snapshot-Superstore-CustomerbyState.png",
-        "name": "CustomerbyState",
+        "image": "resources/snapshot-Superstore-SalesintheSouth.png",
+        "name": "SalesintheSouth",
         "parameters": [
             {
                 "name": "Profit Bin Size",
@@ -31,10 +31,10 @@
                 }
             }
         ],
-        "timestamp": 1598295208689,
-        "uniqueName": "Superstore-CustomerbyState",
-        "url": "http://ec2amaz-2jhlrc5:9123/t/Pre-Sales/views/Superstore/CustomerbyState",
-        "urlWithSelmerTokens": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/CustomerbyState",
+        "timestamp": 1601994990389,
+        "uniqueName": "Superstore-SalesintheSouth",
+        "url": "http://tableau-demo.360suite.io:9123/t/Presales/views/Superstore/SalesintheSouth",
+        "urlWithSelmerTokens": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SalesintheSouth",
         "worksheets": [
             {
                 "columns": {
@@ -42,1339 +42,1068 @@
                         {
                             "dataType": "string",
                             "index": 0,
-                            "name": "Country"
-                        },
-                        {
-                            "dataType": "string",
-                            "index": 1,
-                            "name": "State"
+                            "name": "Region"
                         },
                         {
                             "dataType": "integer",
-                            "index": 2,
-                            "name": "AGG(Customer Number)"
+                            "index": 1,
+                            "name": "YEAR(Order Date)"
                         },
                         {
-                            "dataType": "float",
+                            "dataType": "string",
+                            "index": 2,
+                            "name": "Category"
+                        },
+                        {
+                            "dataType": "string",
                             "index": 3,
-                            "name": "Latitude (generated)"
+                            "name": "Sub-Category"
                         },
                         {
                             "dataType": "float",
                             "index": 4,
-                            "name": "Longitude (generated)"
+                            "name": "SUM(Profit)"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 5,
+                            "name": "SUM(Sales)"
                         }
                     ],
                     "underlying": [
                         {
                             "dataType": "string",
                             "index": 0,
-                            "name": "Country"
+                            "name": "Region"
                         },
                         {
-                            "dataType": "string",
+                            "dataType": "integer",
                             "index": 1,
-                            "name": "State"
+                            "name": "YEAR(Order Date)"
                         },
                         {
                             "dataType": "string",
                             "index": 2,
-                            "name": "Customer Name"
+                            "name": "Category"
                         },
                         {
-                            "dataType": "integer",
+                            "dataType": "string",
                             "index": 3,
-                            "name": "Customer Number"
+                            "name": "Sub-Category"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 4,
+                            "name": "Profit"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 5,
+                            "name": "Sales"
                         }
                     ]
                 },
                 "data": {
                     "summary": [
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "1",
-                                "value": "1"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "43.0000",
-                                "value": "43"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,424",
+                                "value": "-1424.3310000000004"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-107.5000",
-                                "value": "-107.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,785",
+                                "value": "7785.4779999999992"
                             },
-                            "State": {
-                                "formattedValue": "Wyoming",
-                                "value": "Wyoming"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "52",
-                                "value": "52"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "44.5000",
-                                "value": "44.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$134",
+                                "value": "-133.64570000000001"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-90.0000",
-                                "value": "-90"
+                            "SUM(Sales)": {
+                                "formattedValue": "$1,834",
+                                "value": "1834.0375999999999"
                             },
-                            "State": {
-                                "formattedValue": "Wisconsin",
-                                "value": "Wisconsin"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "2",
-                                "value": "2"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "38.6300",
-                                "value": "38.63"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,385",
+                                "value": "-2384.6983000000027"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-80.7300",
-                                "value": "-80.73"
+                            "SUM(Sales)": {
+                                "formattedValue": "$16,292",
+                                "value": "16292.162"
                             },
-                            "State": {
-                                "formattedValue": "West Virginia",
-                                "value": "West Virginia"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "224",
-                                "value": "224"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "47.5000",
-                                "value": "47.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$265",
+                                "value": "-265.09390000000047"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-120.5000",
-                                "value": "-120.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$6,857",
+                                "value": "6857.2599999999993"
                             },
-                            "State": {
-                                "formattedValue": "Washington",
-                                "value": "Washington"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "107",
-                                "value": "107"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "37.7700",
-                                "value": "37.77"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$885",
+                                "value": "-885.19240000000013"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-78.2400",
-                                "value": "-78.24"
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,298",
+                                "value": "8297.7219999999998"
                             },
-                            "State": {
-                                "formattedValue": "Virginia",
-                                "value": "Virginia"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "5",
-                                "value": "5"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "44.1584",
-                                "value": "44.1584"
+                            "SUM(Profit)": {
+                                "formattedValue": "$170",
+                                "value": "169.5970999999999"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-72.7678",
-                                "value": "-72.7678"
+                            "SUM(Sales)": {
+                                "formattedValue": "$1,852",
+                                "value": "1851.8679999999999"
                             },
-                            "State": {
-                                "formattedValue": "Vermont",
-                                "value": "Vermont"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "26",
-                                "value": "26"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "39.2500",
-                                "value": "39.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "$293",
+                                "value": "292.62110000000001"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-111.7500",
-                                "value": "-111.75"
+                            "SUM(Sales)": {
+                                "formattedValue": "$13,923",
+                                "value": "13922.925999999999"
                             },
-                            "State": {
-                                "formattedValue": "Utah",
-                                "value": "Utah"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "370",
-                                "value": "370"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "31.2500",
-                                "value": "31.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$468",
+                                "value": "-468.04079999999999"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-99.2500",
-                                "value": "-99.25"
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,385",
+                                "value": "8384.9400000000005"
                             },
-                            "State": {
-                                "formattedValue": "Texas",
-                                "value": "Texas"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "84",
-                                "value": "84"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "35.7500",
-                                "value": "35.75"
+                            "SUM(Profit)": {
+                                "formattedValue": "$57",
+                                "value": "57.31859999999989"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-86.2500",
-                                "value": "-86.25"
+                            "SUM(Sales)": {
+                                "formattedValue": "$2,659",
+                                "value": "2658.7889999999998"
                             },
-                            "State": {
-                                "formattedValue": "Tennessee",
-                                "value": "Tennessee"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "5",
-                                "value": "5"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "44.5000",
-                                "value": "44.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,163",
+                                "value": "-2162.8466000000003"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-100.2500",
-                                "value": "-100.25"
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,589",
+                                "value": "10589.307000000001"
                             },
-                            "State": {
-                                "formattedValue": "South Dakota",
-                                "value": "South Dakota"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "19",
-                                "value": "19"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "34.0000",
-                                "value": "34"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$511",
+                                "value": "-511.02540000000033"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-81.0000",
-                                "value": "-81"
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,640",
+                                "value": "5640.4771999999994"
                             },
-                            "State": {
-                                "formattedValue": "South Carolina",
-                                "value": "South Carolina"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "25",
-                                "value": "25"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "41.4966",
-                                "value": "41.4966"
+                            "SUM(Profit)": {
+                                "formattedValue": "$672",
+                                "value": "671.71599999999933"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-71.4757",
-                                "value": "-71.4757"
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,995",
+                                "value": "5994.5649999999996"
                             },
-                            "State": {
-                                "formattedValue": "Rhode Island",
-                                "value": "Rhode Island"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "257",
-                                "value": "257"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "40.8600",
-                                "value": "40.86"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$3,538",
+                                "value": "-3537.837500000001"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-77.9000",
-                                "value": "-77.9"
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,604",
+                                "value": "10603.703999999998"
                             },
-                            "State": {
-                                "formattedValue": "Pennsylvania",
-                                "value": "Pennsylvania"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "51",
-                                "value": "51"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "44.0000",
-                                "value": "44"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$426",
+                                "value": "-425.58550000000059"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-120.5000",
-                                "value": "-120.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,863",
+                                "value": "10863.451000000001"
                             },
-                            "State": {
-                                "formattedValue": "Oregon",
-                                "value": "Oregon"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "34",
-                                "value": "34"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "35.5000",
-                                "value": "35.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "$4,866",
+                                "value": "4865.8148999999994"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-97.5000",
-                                "value": "-97.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,636",
+                                "value": "14636.385"
                             },
-                            "State": {
-                                "formattedValue": "Oklahoma",
-                                "value": "Oklahoma"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "202",
-                                "value": "202"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "40.2500",
-                                "value": "40.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,276",
+                                "value": "-2275.8641000000002"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-83.0000",
-                                "value": "-83"
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,885",
+                                "value": "8884.8060000000005"
                             },
-                            "State": {
-                                "formattedValue": "Ohio",
-                                "value": "Ohio"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "2",
-                                "value": "2"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "47.5000",
-                                "value": "47.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$987",
+                                "value": "-987.42470000000048"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-100.0000",
-                                "value": "-100"
+                            "SUM(Sales)": {
+                                "formattedValue": "$19,653",
+                                "value": "19653.439999999999"
                             },
-                            "State": {
-                                "formattedValue": "North Dakota",
-                                "value": "North Dakota"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "122",
-                                "value": "122"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "35.5000",
-                                "value": "35.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "$455",
+                                "value": "454.69039999999927"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-80.0000",
-                                "value": "-80"
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,427",
+                                "value": "14426.642000000002"
                             },
-                            "State": {
-                                "formattedValue": "North Carolina",
-                                "value": "North Carolina"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "415",
-                                "value": "415"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "43.0000",
-                                "value": "43"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,307",
+                                "value": "-2306.7783000000009"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-75.4900",
-                                "value": "-75.49"
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,825",
+                                "value": "7825.3280000000022"
                             },
-                            "State": {
-                                "formattedValue": "New York",
-                                "value": "New York"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "22",
-                                "value": "22"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "34.5000",
-                                "value": "34.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$198",
+                                "value": "-198.08580000000012"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-106.0000",
-                                "value": "-106"
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,964",
+                                "value": "5964.2209999999995"
                             },
-                            "State": {
-                                "formattedValue": "New Mexico",
-                                "value": "New Mexico"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "61",
-                                "value": "61"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "40.1600",
-                                "value": "40.16"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,342",
+                                "value": "-1342.3465000000022"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-74.4900",
-                                "value": "-74.49"
+                            "SUM(Sales)": {
+                                "formattedValue": "$25,216",
+                                "value": "25215.938000000002"
                             },
-                            "State": {
-                                "formattedValue": "New Jersey",
-                                "value": "New Jersey"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "17",
-                                "value": "17"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "43.6600",
-                                "value": "43.66"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,905",
+                                "value": "-2904.9001999999996"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-71.4900",
-                                "value": "-71.49"
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,826",
+                                "value": "11825.968999999996"
                             },
-                            "State": {
-                                "formattedValue": "New Hampshire",
-                                "value": "New Hampshire"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "23",
-                                "value": "23"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "39.2500",
-                                "value": "39.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "$443",
+                                "value": "443.46419999999972"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-116.7500",
-                                "value": "-116.75"
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,338",
+                                "value": "7338.2219999999979"
                             },
-                            "State": {
-                                "formattedValue": "Nevada",
-                                "value": "Nevada"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "23",
-                                "value": "23"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "41.5000",
-                                "value": "41.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "$2,950",
+                                "value": "2950.4840999999997"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-99.7500",
-                                "value": "-99.75"
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,827",
+                                "value": "11827.200000000001"
                             },
-                            "State": {
-                                "formattedValue": "Nebraska",
-                                "value": "Nebraska"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "8",
-                                "value": "8"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "47.0000",
-                                "value": "47"
+                            "SUM(Profit)": {
+                                "formattedValue": "$730",
+                                "value": "730.13559999999927"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-109.7500",
-                                "value": "-109.75"
+                            "SUM(Sales)": {
+                                "formattedValue": "$17,758",
+                                "value": "17758.239000000001"
                             },
-                            "State": {
-                                "formattedValue": "Montana",
-                                "value": "Montana"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "28",
-                                "value": "28"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "38.2500",
-                                "value": "38.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "$48",
+                                "value": "48.351899999999944"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-92.5000",
-                                "value": "-92.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$6,545",
+                                "value": "6544.9129999999996"
                             },
-                            "State": {
-                                "formattedValue": "Missouri",
-                                "value": "Missouri"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "25",
-                                "value": "25"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "33.5030",
-                                "value": "33.503"
+                            "SUM(Profit)": {
+                                "formattedValue": "$1,142",
+                                "value": "1142.2597999999998"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-89.8071",
-                                "value": "-89.8071"
+                            "SUM(Sales)": {
+                                "formattedValue": "$3,500",
+                                "value": "3500.1010000000006"
                             },
-                            "State": {
-                                "formattedValue": "Mississippi",
-                                "value": "Mississippi"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "42",
-                                "value": "42"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "46.2500",
-                                "value": "46.25"
+                            "SUM(Profit)": {
+                                "formattedValue": "$1,203",
+                                "value": "1202.5325999999995"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-94.2500",
-                                "value": "-94.25"
+                            "SUM(Sales)": {
+                                "formattedValue": "$16,038",
+                                "value": "16037.683000000001"
                             },
-                            "State": {
-                                "formattedValue": "Minnesota",
-                                "value": "Minnesota"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "106",
-                                "value": "106"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "43.1045",
-                                "value": "43.1045"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$990",
+                                "value": "-990.23070000000052"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-84.6165",
-                                "value": "-84.6165"
+                            "SUM(Sales)": {
+                                "formattedValue": "$9,354",
+                                "value": "9353.8145000000004"
                             },
-                            "State": {
-                                "formattedValue": "Michigan",
-                                "value": "Michigan"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "62",
-                                "value": "62"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "42.3616",
-                                "value": "42.3616"
+                            "SUM(Profit)": {
+                                "formattedValue": "$938",
+                                "value": "938.37719999999888"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-72.1839",
-                                "value": "-72.1839"
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,372",
+                                "value": "8372.2020000000011"
                             },
-                            "State": {
-                                "formattedValue": "Massachusetts",
-                                "value": "Massachusetts"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "45",
-                                "value": "45"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "39.4444",
-                                "value": "39.4444"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$976",
+                                "value": "-976.00760000000059"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-77.0834",
-                                "value": "-77.0834"
+                            "SUM(Sales)": {
+                                "formattedValue": "$26,587",
+                                "value": "26586.635000000002"
                             },
-                            "State": {
-                                "formattedValue": "Maryland",
-                                "value": "Maryland"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "3",
-                                "value": "3"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "45.5000",
-                                "value": "45.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "$326",
+                                "value": "325.87419999999975"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-69.2400",
-                                "value": "-69.24"
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,217",
+                                "value": "8217.0815000000002"
                             },
-                            "State": {
-                                "formattedValue": "Maine",
-                                "value": "Maine"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "21",
-                                "value": "21"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "30.6935",
-                                "value": "30.6935"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$116",
+                                "value": "-115.76110000000057"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-92.2410",
-                                "value": "-92.241"
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,794",
+                                "value": "14793.558999999999"
                             },
-                            "State": {
-                                "formattedValue": "Louisiana",
-                                "value": "Louisiana"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "58",
-                                "value": "58"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "37.7900",
-                                "value": "37.79"
+                            "SUM(Profit)": {
+                                "formattedValue": "$526",
+                                "value": "525.94669999999974"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-84.8700",
-                                "value": "-84.87"
+                            "SUM(Sales)": {
+                                "formattedValue": "$24,372",
+                                "value": "24372.005000000001"
                             },
-                            "State": {
-                                "formattedValue": "Kentucky",
-                                "value": "Kentucky"
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "14",
-                                "value": "14"
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "38.5000",
-                                "value": "38.5"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,031",
+                                "value": "-1030.5071000000003"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-98.5000",
-                                "value": "-98.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,888",
+                                "value": "11888.314499999999"
                             },
-                            "State": {
-                                "formattedValue": "Kansas",
-                                "value": "Kansas"
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         },
                         {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "17",
-                                "value": "17"
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
                             },
-                            "Latitude (generated)": {
-                                "formattedValue": "42.0000",
-                                "value": "42"
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,584",
+                                "value": "-2583.8023000000017"
                             },
-                            "Longitude (generated)": {
-                                "formattedValue": "-93.5000",
-                                "value": "-93.5"
+                            "SUM(Sales)": {
+                                "formattedValue": "$15,778",
+                                "value": "15778.260000000002"
                             },
-                            "State": {
-                                "formattedValue": "Iowa",
-                                "value": "Iowa"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "70",
-                                "value": "70"
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
                             },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "40.0000",
-                                "value": "40"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-86.2500",
-                                "value": "-86.25"
-                            },
-                            "State": {
-                                "formattedValue": "Indiana",
-                                "value": "Indiana"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "237",
-                                "value": "237"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "40.0000",
-                                "value": "40"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-89.2500",
-                                "value": "-89.25"
-                            },
-                            "State": {
-                                "formattedValue": "Illinois",
-                                "value": "Illinois"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "11",
-                                "value": "11"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "44.0739",
-                                "value": "44.0739"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-114.5420",
-                                "value": "-114.542"
-                            },
-                            "State": {
-                                "formattedValue": "Idaho",
-                                "value": "Idaho"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "83",
-                                "value": "83"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "32.1598",
-                                "value": "32.1598"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-83.4715",
-                                "value": "-83.4715"
-                            },
-                            "State": {
-                                "formattedValue": "Georgia",
-                                "value": "Georgia"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "181",
-                                "value": "181"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "28.4200",
-                                "value": "28.42"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-81.5500",
-                                "value": "-81.55"
-                            },
-                            "State": {
-                                "formattedValue": "Florida",
-                                "value": "Florida"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "4",
-                                "value": "4"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "38.9100",
-                                "value": "38.91"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-77.0000",
-                                "value": "-77"
-                            },
-                            "State": {
-                                "formattedValue": "District of Columbia",
-                                "value": "District of Columbia"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "43",
-                                "value": "43"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "38.6716",
-                                "value": "38.6716"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-75.4165",
-                                "value": "-75.4165"
-                            },
-                            "State": {
-                                "formattedValue": "Delaware",
-                                "value": "Delaware"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "43",
-                                "value": "43"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "41.6227",
-                                "value": "41.6227"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-72.7028",
-                                "value": "-72.7028"
-                            },
-                            "State": {
-                                "formattedValue": "Connecticut",
-                                "value": "Connecticut"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "75",
-                                "value": "75"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "39.0000",
-                                "value": "39"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-105.5000",
-                                "value": "-105.5"
-                            },
-                            "State": {
-                                "formattedValue": "Colorado",
-                                "value": "Colorado"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "577",
-                                "value": "577"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "37.2500",
-                                "value": "37.25"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-119.7500",
-                                "value": "-119.75"
-                            },
-                            "State": {
-                                "formattedValue": "California",
-                                "value": "California"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "27",
-                                "value": "27"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "34.7500",
-                                "value": "34.75"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-92.5000",
-                                "value": "-92.5"
-                            },
-                            "State": {
-                                "formattedValue": "Arkansas",
-                                "value": "Arkansas"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "100",
-                                "value": "100"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "34.5000",
-                                "value": "34.5"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-111.5000",
-                                "value": "-111.5"
-                            },
-                            "State": {
-                                "formattedValue": "Arizona",
-                                "value": "Arizona"
-                            }
-                        },
-                        {
-                            "AGG(Customer Number)": {
-                                "formattedValue": "34",
-                                "value": "34"
-                            },
-                            "Country": {
-                                "formattedValue": "United States",
-                                "value": "United States"
-                            },
-                            "Latitude (generated)": {
-                                "formattedValue": "32.7500",
-                                "value": "32.75"
-                            },
-                            "Longitude (generated)": {
-                                "formattedValue": "-86.7500",
-                                "value": "-86.75"
-                            },
-                            "State": {
-                                "formattedValue": "Alabama",
-                                "value": "Alabama"
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
                             }
                         }
                     ]
                 },
                 "filters": [
                     {
-                        "caption": "State",
+                        "caption": "Region",
                         "type": "categorical",
                         "values": [
                             {
-                                "formattedValue": "Alabama",
-                                "value": "Alabama"
+                                "formattedValue": "Central",
+                                "value": "Central"
                             },
                             {
-                                "formattedValue": "Arizona",
-                                "value": "Arizona"
+                                "formattedValue": "East",
+                                "value": "East"
                             },
                             {
-                                "formattedValue": "Arkansas",
-                                "value": "Arkansas"
+                                "formattedValue": "West",
+                                "value": "West"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Sub-Category",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
                             },
                             {
-                                "formattedValue": "California",
-                                "value": "California"
+                                "formattedValue": "Machines",
+                                "value": "Machines"
                             },
                             {
-                                "formattedValue": "Colorado",
-                                "value": "Colorado"
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "YEAR(Order Date)",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "2014",
+                                "value": 2014
                             },
                             {
-                                "formattedValue": "Connecticut",
-                                "value": "Connecticut"
+                                "formattedValue": "2015",
+                                "value": 2015
                             },
                             {
-                                "formattedValue": "Delaware",
-                                "value": "Delaware"
+                                "formattedValue": "2016",
+                                "value": 2016
                             },
                             {
-                                "formattedValue": "District of Columbia",
-                                "value": "District of Columbia"
-                            },
-                            {
-                                "formattedValue": "Florida",
-                                "value": "Florida"
-                            },
-                            {
-                                "formattedValue": "Georgia",
-                                "value": "Georgia"
-                            },
-                            {
-                                "formattedValue": "Idaho",
-                                "value": "Idaho"
-                            },
-                            {
-                                "formattedValue": "Illinois",
-                                "value": "Illinois"
-                            },
-                            {
-                                "formattedValue": "Indiana",
-                                "value": "Indiana"
-                            },
-                            {
-                                "formattedValue": "Iowa",
-                                "value": "Iowa"
-                            },
-                            {
-                                "formattedValue": "Kansas",
-                                "value": "Kansas"
-                            },
-                            {
-                                "formattedValue": "Kentucky",
-                                "value": "Kentucky"
-                            },
-                            {
-                                "formattedValue": "Louisiana",
-                                "value": "Louisiana"
-                            },
-                            {
-                                "formattedValue": "Maine",
-                                "value": "Maine"
-                            },
-                            {
-                                "formattedValue": "Maryland",
-                                "value": "Maryland"
-                            },
-                            {
-                                "formattedValue": "Massachusetts",
-                                "value": "Massachusetts"
-                            },
-                            {
-                                "formattedValue": "Michigan",
-                                "value": "Michigan"
-                            },
-                            {
-                                "formattedValue": "Minnesota",
-                                "value": "Minnesota"
-                            },
-                            {
-                                "formattedValue": "Mississippi",
-                                "value": "Mississippi"
-                            },
-                            {
-                                "formattedValue": "Missouri",
-                                "value": "Missouri"
-                            },
-                            {
-                                "formattedValue": "Montana",
-                                "value": "Montana"
-                            },
-                            {
-                                "formattedValue": "Nebraska",
-                                "value": "Nebraska"
-                            },
-                            {
-                                "formattedValue": "Nevada",
-                                "value": "Nevada"
-                            },
-                            {
-                                "formattedValue": "New Hampshire",
-                                "value": "New Hampshire"
-                            },
-                            {
-                                "formattedValue": "New Jersey",
-                                "value": "New Jersey"
-                            },
-                            {
-                                "formattedValue": "New Mexico",
-                                "value": "New Mexico"
-                            },
-                            {
-                                "formattedValue": "New York",
-                                "value": "New York"
-                            },
-                            {
-                                "formattedValue": "North Carolina",
-                                "value": "North Carolina"
-                            },
-                            {
-                                "formattedValue": "North Dakota",
-                                "value": "North Dakota"
-                            },
-                            {
-                                "formattedValue": "Ohio",
-                                "value": "Ohio"
-                            },
-                            {
-                                "formattedValue": "Oklahoma",
-                                "value": "Oklahoma"
-                            },
-                            {
-                                "formattedValue": "Oregon",
-                                "value": "Oregon"
-                            },
-                            {
-                                "formattedValue": "Pennsylvania",
-                                "value": "Pennsylvania"
-                            },
-                            {
-                                "formattedValue": "Rhode Island",
-                                "value": "Rhode Island"
-                            },
-                            {
-                                "formattedValue": "South Carolina",
-                                "value": "South Carolina"
-                            },
-                            {
-                                "formattedValue": "South Dakota",
-                                "value": "South Dakota"
-                            },
-                            {
-                                "formattedValue": "Tennessee",
-                                "value": "Tennessee"
-                            },
-                            {
-                                "formattedValue": "Texas",
-                                "value": "Texas"
-                            },
-                            {
-                                "formattedValue": "Utah",
-                                "value": "Utah"
-                            },
-                            {
-                                "formattedValue": "Vermont",
-                                "value": "Vermont"
-                            },
-                            {
-                                "formattedValue": "Virginia",
-                                "value": "Virginia"
-                            },
-                            {
-                                "formattedValue": "Washington",
-                                "value": "Washington"
-                            },
-                            {
-                                "formattedValue": "West Virginia",
-                                "value": "West Virginia"
-                            },
-                            {
-                                "formattedValue": "Wisconsin",
-                                "value": "Wisconsin"
-                            },
-                            {
-                                "formattedValue": "Wyoming",
-                                "value": "Wyoming"
+                                "formattedValue": "2017",
+                                "value": 2017
                             }
                         ]
                     }
                 ],
-                "name": "Customer by State"
+                "name": "Sales in the South"
             }
         ]
     },
@@ -1398,11 +1127,12 @@
         {
             "disabled": false,
             "name": "Set Parameter: Chart Type",
-            "parameter-type": "string",
-            "target": "Chart Type",
+            "parameter-type": "number",
+            "target": "Top Customers",
             "type": "set_parameter",
             "value-date-type": "static",
             "value-datetime-type": "static",
+            "value-number": 3,
             "value-string": "Map"
         }
     ],
