@@ -15,7 +15,7 @@
             "disabled": false,
             "name": "Open viz - Sales in the South",
             "type": "viz_open",
-            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore/SalesintheSouth"
+            "url": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore-Dev/Categories"
         },
         {
             "disabled": false,

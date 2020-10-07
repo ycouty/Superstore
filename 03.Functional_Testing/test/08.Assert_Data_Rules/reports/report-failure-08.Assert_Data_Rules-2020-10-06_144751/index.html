@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kinesis.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bundle.js" type="text/javascript"></script> <!-- json-formatter-js, distributed as bundle.js on github -->
+    <script src="js/xml2json.min.js" type="text/javascript"></script>
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/Chart.min.js" type="text/javascript"></script>
+    <script src="js/easyzoom.js" type="text/javascript"></script>
+    <!-- Init easyzoom -->
+    <script language="javascript">$(document).ready(function() { $('.easyzoom').easyZoom(); });</script>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title></title>
+</head>
+<body>
+<div class="col-md-1"></div>
+<div class="col-md-10">
+    <table class="table table-borderless">
+        <tr>
+            <td class="col-md-3 text-center vert-align">
+                
+                    <h4><span class="label label-danger">&#10060; Failed</span></h4>
+                
+            </td>
+            <td class="col-md-6 text-center vert-align">
+                <h3>08.Assert_Data_Rules</h3>
+                <h5>Sample Test for Assert Data Rules</h5>
+                <h5>2020-10-06 14:47:51</h5>
+            </td>
+            <td class="col-md-3 text-center vert-align"><img src="images/kinesis-logo.png"/></td>
+        </tr>
+    </table>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Summary</h3>
+<table class="table table-striped">
+    <!--<caption>Summary</caption>-->
+    <thead>
+    <tr>
+        <!--<td>#</td>-->
+        <td>Task Name</td>
+        <td>Status</td>
+        <td>Time</td>
+    </tr>
+    </thead>
+    <!--For each task...-->
+    <!--Each task should contain an anchor link to the task config later down the page-->
+
+    <tbody>
+    
+    <tr>
+        <td><a href="#link-65860154">Login to Tableau</a></td>
+        <td><p class="text-success">&#9989;</p></td>
+        <td>8.684s</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#link-1084646169">Open Viz - Sales in the South</a></td>
+        <td><p class="text-success">&#9989;</p></td>
+        <td>10.339s</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#link-714918444">Set Filter: Sub-Category</a></td>
+        <td><p class="text-success">&#9989;</p></td>
+        <td>1.239s</td>
+    </tr>
+    
+    <tr>
+        <td><a href="#link-1780878608">Assert Data Rules</a></td>
+        <td>&#10060;</td>
+        <td>0.981s</td>
+    </tr>
+    
+    </tbody>
+</table>
+
+            <h3>Task Details</h3>
+    
+   <a name="link-65860154"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name (1/4)</th>
+                <th>Login to Tableau</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-65860154"></td>
+                <script type="text/javascript">
+                    var jsonData = {"disabled":false,"name":"Login to Tableau","password":"********","site-id":"Presales","type":"login_tableau","url":"http:\/\/tableau-demo.360suite.io:9123","user":"ycouty"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-65860154");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Login successful</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-20201006T144737.024Z.png"/>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+   <a name="link-1084646169"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name (2/4)</th>
+                <th>Open Viz - Sales in the South</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-1084646169"></td>
+                <script type="text/javascript">
+                    var jsonData = {"disabled":false,"name":"Open Viz - Sales in the South","type":"viz_open","url":"http:\/\/tableau-demo.360suite.io:9123\/t\/Presales\/views\/Superstore\/SalesintheSouth"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-1084646169");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>Viz opened successfully</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-20201006T144744.081Z.png"/>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+   <a name="link-714918444"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name (3/4)</th>
+                <th>Set Filter: Sub-Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-714918444"></td>
+                <script type="text/javascript">
+                    var jsonData = {"disabled":false,"name":"Set Filter: Sub-Category","select-all":false,"target":"Sub-Category","type":"set_filter_list","values":["Bookcases","Tables","Machines"]};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-714918444");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+                <tr>
+                    <td>Result Message</td>
+                    <td><samp><p>List Filter set successfully</p></samp></td>
+                </tr>
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-20201006T144748.617Z.png"/>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+   <a name="link-1780878608"></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name (4/4)</th>
+                <th>Assert Data Rules</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Configuration</td>
+                <td id="task-1780878608"></td>
+                <script type="text/javascript">
+                    var jsonData = {"data-type":"SUMMARY","disabled":false,"exclude-nulls":false,"name":"Assert Data Rules","formatted-values":false,"type":"assert_data_rule_meets","scope":"every-row","rules":[{"column":"Sub-Category","expression-value":"Supplies","operator":"not-equals"},{"column":"Region","expression-value":"Central|East|West","operator":"regex"},{"column":"Year","expression-value":"2018","operator":"not-equals"}],"tableau-export-csv":{"delimiter":",","encoding":"utf8","newline-char":"\n"},"target":"Sales in the South"};
+                    var formatter = new JSONFormatter(jsonData, 0);
+                    var tag = document.getElementById("task-1780878608");
+                    tag.appendChild(formatter.render());
+                </script>
+            </tr>
+            <tr>
+                <td>Artifact</td>
+                <td>
+                    
+                        Not available
+                    
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+                
+
+    
+        
+        <tr>
+            <td>Failed Column Rules</td>
+            <td>
+                <strong>Failed Column Rules (Up to 20 rows)</strong>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td><strong>Column</strong></td>
+                            <td><strong>Operator</strong></td>
+                            <td><strong>Expression</strong></td>
+                            <td><strong>Actual Value</strong></td>
+                        </tr>
+                    </thead>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong><samp></samp></strong></td>
+                        <td><samp></samp></td>
+                        <td><samp></samp></td>
+                        <td class="text-danger"><samp></samp></td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    
+
+            
+            
+            
+            
+            
+            
+            <tr>
+                <td>Screenshot</td>
+                <td class="col-md-12">
+                    
+                        <img class="img-responsive img-thumbnail" src="screenshots/kinesis-20201006T144749.626Z.png"/>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>
+</body>
+</html>

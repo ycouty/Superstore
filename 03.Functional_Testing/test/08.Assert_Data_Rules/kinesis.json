@@ -1,6 +1,1112 @@
 {
     "description": "Sample Test for Assert Data Rules",
     "name": "08.Assert_Data_Rules",
+    "tableau-snapshot": {
+        "content": {
+            "filters": true,
+            "fullColumns": true,
+            "image": true,
+            "parameters": true,
+            "summaryColumns": true,
+            "summaryData": true,
+            "worksheets": true
+        },
+        "image": "resources/snapshot-Superstore_16019319141090-SalesintheSouth.png",
+        "name": "SalesintheSouth",
+        "parameters": [
+            {
+                "name": "Profit Bin Size",
+                "type": "integer",
+                "value": {
+                    "formattedValue": "200",
+                    "value": 200
+                }
+            },
+            {
+                "name": "Top Customers",
+                "type": "integer",
+                "value": {
+                    "formattedValue": "5",
+                    "value": 5
+                }
+            }
+        ],
+        "timestamp": 1602099568625,
+        "uniqueName": "Superstore_16019319141090-SalesintheSouth",
+        "url": "http://tableau-demo.360suite.io:9123/t/Presales/views/Superstore_16019319141090/SalesintheSouth",
+        "urlWithSelmerTokens": "{{TABLEAU_URL}}/t/{{TABLEAU_SITE}}/views/Superstore_16019319141090/SalesintheSouth",
+        "worksheets": [
+            {
+                "columns": {
+                    "summary": [
+                        {
+                            "dataType": "string",
+                            "index": 0,
+                            "name": "Region"
+                        },
+                        {
+                            "dataType": "integer",
+                            "index": 1,
+                            "name": "YEAR(Order Date)"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 2,
+                            "name": "Category"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 3,
+                            "name": "Sub-Category"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 4,
+                            "name": "SUM(Profit)"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 5,
+                            "name": "SUM(Sales)"
+                        }
+                    ],
+                    "underlying": [
+                        {
+                            "dataType": "string",
+                            "index": 0,
+                            "name": "Region"
+                        },
+                        {
+                            "dataType": "integer",
+                            "index": 1,
+                            "name": "YEAR(Order Date)"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 2,
+                            "name": "Category"
+                        },
+                        {
+                            "dataType": "string",
+                            "index": 3,
+                            "name": "Sub-Category"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 4,
+                            "name": "Profit"
+                        },
+                        {
+                            "dataType": "float",
+                            "index": 5,
+                            "name": "Sales"
+                        }
+                    ]
+                },
+                "data": {
+                    "summary": [
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,424",
+                                "value": "-1424.3310000000004"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,785",
+                                "value": "7785.4779999999992"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$134",
+                                "value": "-133.64570000000001"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$1,834",
+                                "value": "1834.0375999999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,385",
+                                "value": "-2384.6983000000027"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$16,292",
+                                "value": "16292.162"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$265",
+                                "value": "-265.09390000000047"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$6,857",
+                                "value": "6857.2599999999993"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$885",
+                                "value": "-885.19240000000013"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,298",
+                                "value": "8297.7219999999998"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$170",
+                                "value": "169.5970999999999"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$1,852",
+                                "value": "1851.8679999999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$293",
+                                "value": "292.62110000000001"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$13,923",
+                                "value": "13922.925999999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$468",
+                                "value": "-468.04079999999999"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,385",
+                                "value": "8384.9400000000005"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$57",
+                                "value": "57.31859999999989"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$2,659",
+                                "value": "2658.7889999999998"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,163",
+                                "value": "-2162.8466000000003"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,589",
+                                "value": "10589.307000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$511",
+                                "value": "-511.02540000000033"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,640",
+                                "value": "5640.4771999999994"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$672",
+                                "value": "671.71599999999933"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,995",
+                                "value": "5994.5649999999996"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$3,538",
+                                "value": "-3537.837500000001"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,604",
+                                "value": "10603.703999999998"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$426",
+                                "value": "-425.58550000000059"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$10,863",
+                                "value": "10863.451000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$4,866",
+                                "value": "4865.8148999999994"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,636",
+                                "value": "14636.385"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,276",
+                                "value": "-2275.8641000000002"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,885",
+                                "value": "8884.8060000000005"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$987",
+                                "value": "-987.42470000000048"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$19,653",
+                                "value": "19653.439999999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$455",
+                                "value": "454.69039999999927"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,427",
+                                "value": "14426.642000000002"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,307",
+                                "value": "-2306.7783000000009"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,825",
+                                "value": "7825.3280000000022"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$198",
+                                "value": "-198.08580000000012"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$5,964",
+                                "value": "5964.2209999999995"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,342",
+                                "value": "-1342.3465000000022"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$25,216",
+                                "value": "25215.938000000002"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,905",
+                                "value": "-2904.9001999999996"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,826",
+                                "value": "11825.968999999996"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$443",
+                                "value": "443.46419999999972"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$7,338",
+                                "value": "7338.2219999999979"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$2,950",
+                                "value": "2950.4840999999997"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,827",
+                                "value": "11827.200000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$730",
+                                "value": "730.13559999999927"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$17,758",
+                                "value": "17758.239000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$48",
+                                "value": "48.351899999999944"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$6,545",
+                                "value": "6544.9129999999996"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$1,142",
+                                "value": "1142.2597999999998"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$3,500",
+                                "value": "3500.1010000000006"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2014",
+                                "value": "2014"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$1,203",
+                                "value": "1202.5325999999995"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$16,038",
+                                "value": "16037.683000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$990",
+                                "value": "-990.23070000000052"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$9,354",
+                                "value": "9353.8145000000004"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$938",
+                                "value": "938.37719999999888"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,372",
+                                "value": "8372.2020000000011"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2015",
+                                "value": "2015"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$976",
+                                "value": "-976.00760000000059"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$26,587",
+                                "value": "26586.635000000002"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$326",
+                                "value": "325.87419999999975"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$8,217",
+                                "value": "8217.0815000000002"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$116",
+                                "value": "-115.76110000000057"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$14,794",
+                                "value": "14793.558999999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2016",
+                                "value": "2016"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "$526",
+                                "value": "525.94669999999974"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$24,372",
+                                "value": "24372.005000000001"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Furniture",
+                                "value": "Furniture"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$1,031",
+                                "value": "-1030.5071000000003"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$11,888",
+                                "value": "11888.314499999999"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        },
+                        {
+                            "Category": {
+                                "formattedValue": "Technology",
+                                "value": "Technology"
+                            },
+                            "Region": {
+                                "formattedValue": "West",
+                                "value": "West"
+                            },
+                            "SUM(Profit)": {
+                                "formattedValue": "-$2,584",
+                                "value": "-2583.8023000000017"
+                            },
+                            "SUM(Sales)": {
+                                "formattedValue": "$15,778",
+                                "value": "15778.260000000002"
+                            },
+                            "Sub-Category": {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            "YEAR(Order Date)": {
+                                "formattedValue": "2017",
+                                "value": "2017"
+                            }
+                        }
+                    ]
+                },
+                "filters": [
+                    {
+                        "caption": "Region",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "Central",
+                                "value": "Central"
+                            },
+                            {
+                                "formattedValue": "East",
+                                "value": "East"
+                            },
+                            {
+                                "formattedValue": "West",
+                                "value": "West"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Sub-Category",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "Bookcases",
+                                "value": "Bookcases"
+                            },
+                            {
+                                "formattedValue": "Machines",
+                                "value": "Machines"
+                            },
+                            {
+                                "formattedValue": "Tables",
+                                "value": "Tables"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "YEAR(Order Date)",
+                        "type": "categorical",
+                        "values": [
+                            {
+                                "formattedValue": "2014",
+                                "value": 2014
+                            },
+                            {
+                                "formattedValue": "2015",
+                                "value": 2015
+                            },
+                            {
+                                "formattedValue": "2016",
+                                "value": 2016
+                            },
+                            {
+                                "formattedValue": "2017",
+                                "value": 2017
+                            }
+                        ]
+                    }
+                ],
+                "name": "Sales in the South"
+            }
+        ]
+    },
     "tasks": [
         {
             "disabled": false,
@@ -33,7 +1139,7 @@
             "data-type": "SUMMARY",
             "disabled": false,
             "exclude-nulls": false,
-            "formatted-values": false,
+            "formatted-values": true,
             "name": "Assert Data Rules",
             "rules": [
                 {
@@ -47,7 +1153,7 @@
                     "operator": "regex"
                 },
                 {
-                    "column": "Year",
+                    "column": "YEAR(Order Date)",
                     "expression-value": "2018",
                     "operator": "not-equals"
                 }
